@@ -1,8 +1,7 @@
-# SkinSense-AI-ML-based-Skin-Analysis-System-V1-
+# SkinSense-AI-ML-based-Skin-Analysis and Recommendation System-V1
 Build an AI system that analyzes skin characteristics and provides personalized, data-driven recommendations to reduce confusion and product misuse.
  Problem Statement :
-Many people struggle to understand their skin type and choose suitable skincare routines. Overconsumption, misinformation, and non-personalized product use lead to skin damage and financial waste.
-
+Many people struggle to understand their skin type and choose suitable skincare routines. Overconsumption, misinformation, and non-personalized product use lead to skin damage,ingredient conflicts  and financial waste.
 Objective:
 Build an AI system that analyzes skin characteristics and provides personalized, data-driven recommendations to reduce confusion and product misuse.
 
@@ -14,7 +13,7 @@ Build an AI system that analyzes skin characteristics and provides personalized,
 Feature engineering
 Classical ML models (Logistic Regression, Random Forest,Linear Regression)
 Evaluation metrics (accuracy, F1-score,RMSE,R-squared)
-Structured dataset
+Structured dataset,Streamlit-based user interface
 
 🔹 V2 – Deep Learning Enhancement
 Neural networks (TensorFlow / PyTorch)
@@ -47,17 +46,27 @@ Recommendation Optimizer
         ↓
 Explanation Engine & Evaluation 
         ↓
-User Interface (Web/App)
+Streamlit web Interface (Web/App)
 
-Results Section:
+Tech Stack :
+Python
+Pandas
+NumPy
+Scikit-learn
+Streamlit
 
-- Model comparison table
-- Accuracy improvements across versions
-- Confusion matrix
+ Results Section:
+Model comparison conducted
 
-  Future Improvements:
+Confusion matrix analysis
+Accuracy and F1-score evaluation
+Regression metrics for scoring tasks
+(Future versions will include performance comparison charts across model upgrades.)
 
-  - Real dataset collection
-  - Mobile app deployment
-  - Dermatologist collaboration
-  - Model optimization
+Future Improvements:
+
+Real-world dataset collection
+Dermatologist collaboration
+Model optimization
+Mobile app deployment
+Explainability enhancement
