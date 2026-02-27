@@ -1,0 +1,33 @@
+name,type,brand,key_actives,suitable_for,concerns,price,rating,texture
+Salicylic Acid + LHA 2% Cleanser,Cleanser,Minimalist,"['Salicyclic acid', 'zinc', 'Oat extractAllantoin']","['Oily', 'Combination']","['Acne', 'Breakouts', 'Oiliness']",269,4.6,Gel
+Cetaphil Oily Skin Cleanser,Cleanser,Cetaphil,"['Zinc', 'Salicylic Acid']",['Oily'],"['Acne', 'Oil Control', 'Large Pores']",650,4.3,Gel
+Salicylic Acid Oil Control Face Wash,Cleanser,De construct,"['Salicyclic acid', 'Niacinamide']","['Oily', 'Combination']","['Acne', 'Oil Control', 'clogged pores']",224,4.4,Gel
+Cetaphil Gentle Skin Cleanser,Cleanser,Cetaphil,"['Glycerin', 'Panthenol']","['Dry', 'Sensitive', 'Normal']","['Dryness', 'Sensitivity']",599,4.7,Cream
+CeraVe Hydrating Cleanser,Cleanser,CeraVe,"['Ceramides', 'Hyaluronic Acid']","['Dry', 'Normal']","['Dryness', 'Dehydration']",694,4.6,Cream
+Dot & Key Barrier Repair Hydrating Gentle Face Wash,Cleanser,Dot and Key,"['Ceramides', 'Hyaluronic Acid', 'Glycerin & Panthenol']","['Dry', 'Sensitive']","['Dryness', 'Dehydration']",249,4.5,Cream
+Bioderma Sensibio Gel Cleanser,Cleanser,Bioderma,"['Cucumber Extract', 'Glycerin']","['Sensitive', 'Dry']","['Sensitivity', 'Redness']",584,4.5,Gel
+2% Salicylic Acid & 5% Niacinamide Serum,Serum,asaya,"['2% Salicylic Acid', '5% Niacinamide Serum']","['Oily', 'Combination']","['Acne', 'Oil Control', 'Pores']",466,4.5,Serum
+Minimalist Salicylic Acid 2% Face Serum,Serum,Minimalist,['2% Salicyclic acid'],['Oily'],"['Acne', 'blackheads and whiteheads']",550,4.7,Serum
+Acne Defence Face Serum,serum,Fix derma,"['Salicylic Acid 2%', 'Mandelic Acid (AHA)', 'Azelaic Acid']","['Oily', 'Combination']","['Acne', 'Blackheads', 'Pores']",539,4.5,serum
+Minimalist Vitamin C 10%,Serum,Minimalist,['Ethyl Ascorbic Acid 10%'],['All'],"['Pigmentation', 'Dark Spots', 'Dullness']",699,4.4,Serum
+Plum 15% Vitamin C Serum,Serum,Plum,"['Vitamin C 15%', 'Mandarin']",['All'],"['Pigmentation', 'Dark Spots', 'Brightening']",895,4.3,Serum
+Deconstruct clearing serum  ,Serum,Deconstruct,"['Alpha Arbutin 2%', 'Niacinamide 5%']",['All'],"['Pigmentation', 'Dark Spots']",525,4.3,Serum
+The Ordinary Hyaluronic Acid 2%,Serum,The Ordinary,"['Hyaluronic Acid 2%', 'B5']",['All'],"['Dryness', 'Dehydration', 'Fine Lines']",590,4.6,Serum
+12% Barrier Boost Serum,Serum,Dot & key,"['Hyaluronic Acid', 'Ceramides', 'Peptides']","['Dry', 'Normal', 'Sensitive', 'Combination']","['Dryness', 'Dehydration', 'Sensitivity']",479,4.5,Gel
+The Ordinary Retinol 0.5%,Treatment,The Ordinary,['Retinol 0.5%'],"['Normal', 'Combination']","['Aging', 'Fine Lines', 'Texture']",850,4.5,Cream
+Minimalist Retinol 0.3%,Treatment,Minimalist,['Retinol 0.3%'],"['Normal', 'Oily']","['Aging', 'Acne', 'Texture']",699,4.3,Serum
+Cosrx Centella Blemish Serum,Serum,Cosrx,"['Centella Asiatica', 'Niacinamide']","['Sensitive', 'All']","['Redness', 'Acne', 'Sensitivity']",1450,4.6,Serum
+Aveeno Calm + Restore Triple Oat Serum,serum,Aveeno,"['Triple Oat Complex', 'Tocopherol (Vitamin E)']","['Sensitive', 'Dry']","['redness', 'sensitivity']",900,4.2,Serum
+Neutrogena Hydro Boost Water Gel,Moisturizer,Neutrogena,"['Hyaluronic Acid', 'Glycerin']","['Oily', 'Combination']","['Oil Control', 'Hydration']",799,4.5,Gel
+Cetaphil Oil Control Moisturizer,Moisturizer,Cetaphil,"['Zinc', 'Glycerin']",['Oily'],"['Oil Control', 'Acne']",750,4.4,Gel
+CeraVe Moisturizing Cream,Moisturizer,CeraVe,"['Ceramides', 'Hyaluronic Acid']","['Dry', 'Normal']","['Dryness', 'Barrier Repair']",1099,4.7,Cream
+Rice Berry Face Moisturizer,Moisturizer,Little Extra,"['Ceramides', 'Lipids', 'Hyaluronic acids']","['Dry', 'Sensitive']","['Dryness', 'Sensitivity', 'Barrier Repair']",389,4.6,Cream
+Bioderma Sensibio Light Cream,Moisturizer,Bioderma,"['Glycerin', 'Shea Butter']","['Sensitive', 'Dry']","['Sensitivity', 'Redness']",1450,4.5,Cream
+Barrier Plus Peptide Ceramide Moisturizer,Moisturizer,The formulax,"['Ceramide Complex', 'Cholesterol', 'Peptides']","['Sensitive', 'Dry']","['Sensitivity', 'Redness', 'Dryness']",554,4.8,Cream
+3:1:1 Barrier Bounce Moisturizer,Moisturizer,Wishcare,"['Ceramides', 'Peptide complex', 'Niacinamie']","['Sensitive', 'Dry']","['Sensitivity', 'Barrier repair', 'Dryness']",1450,4.5,Cream
+Simple Hydrating Light Moisturizer,Moisturizer,Simple,"['Glycerin', 'Vitamin E']",['All'],['Hydration'],399,4.3,Lotion
+La Roche-Posay Anthelios SPF 50,Sunscreen,La Roche-Posay,"['Mexoryl XL', 'Thermal Water']",['All'],"['Sun Protection', 'Pigmentation Prevention']",1650,4.7,Fluid
+Niacinamide Oil Balance Fluid Sunscreen,Sunscreen,Wishcare,"['Ceramides', 'Panthenol', 'Centella asiatica']","['Oily', 'Combination', 'Normal']",['Sun Protection'],495,4.3,Fluid
+Invisible Gel Sunscreen SPF 50 ,Sunscreen,Wishcare,"['Ceramides', 'Niacinamide']","['Dry', 'Normal']",['Sun Protection'],495,4.5,Cream
+Bioderma Photoderm Max SPF 50+,Sunscreen,Bioderma,['Cellular Bioprotection'],"['Sensitive', 'All']","['Sun Protection', 'Sensitivity']",1850,4.6,Fluid
+Re'equil Ultra Matte SPF 50,Sunscreen,Re'equil,"['Zinc Oxide', 'Titanium Dioxide']","['Oily', 'Combination']","['Sun Protection', 'Oil Control']",549,4.5,Gel
