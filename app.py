@@ -35,11 +35,13 @@ st.markdown("""
         margin: 1rem 0;
     }
     .product-card {
-        padding: 1rem;
-        border-left: 4px solid #FF6B9D;
-        background: #f8f9fa;
-        margin: 0.5rem 0;
-        border-radius: 5px;
+       padding: 1.2rem;
+       border-left: 4px solid #FF6B9D;
+       background: #2b2b2b;
+       margin: 0.8rem 0;
+       border-radius: 12px;
+       color: white;
+       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
 </style>
 """, unsafe_allow_html=True)
