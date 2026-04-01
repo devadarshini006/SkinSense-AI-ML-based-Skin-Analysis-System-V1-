@@ -195,52 +195,56 @@ with tab1:
                 st.warning("🎯 **High Priority - Aging:** Retinol 0.3-1%, Peptides, Antioxidants")
 
             # Product recommendations
-            if products_df is not None:
-                st.markdown("---")
-                st.markdown("## 🛍️ Personalized Product Recommendations")
+# Product recommendations
+if products_df is not None:
+    st.markdown("---")
+    st.markdown("## 🛍️ Personalized Product Recommendations")
 
-                # Filter products
-                budget_ranges = {'low': (0, 800), 'medium': (400, 1500), 'high': (1000, 5000)}
-                min_p, max_p = budget_ranges[budget]
+    # Filter products
+    budget_ranges = {'low': (0, 800), 'medium': (400, 1500), 'high': (1000, 5000)}
+    min_p, max_p = budget_ranges[budget]
 
-                top_concerns = []
-                if acne_score > 60: top_concerns.append('Acne')
-                if pigment_score > 60: top_concerns.extend(['Pigmentation', 'Dark Spots'])
-                if aging_score > 60: top_concerns.append('Aging')
-                if not top_concerns: top_concerns = ['Hydration']
+    top_concerns = []
+    if acne_score > 60: top_concerns.append('Acne')
+    if pigment_score > 60: top_concerns.extend(['Pigmentation', 'Dark Spots'])
+    if aging_score > 60: top_concerns.append('Aging')
+    if not top_concerns: top_concerns = ['Hydration']
 
-                for prod_type in ['Cleanser', 'Serum', 'Moisturizer', 'Sunscreen']:
-                    filtered = products_df[
-                        (products_df['type'] == prod_type) &
-                        (products_df['price'] >= min_p) &
-                        (products_df['price'] <= max_p)
-                    ].copy()
+    for prod_type in ['Cleanser', 'Serum', 'Moisturizer', 'Sunscreen']:
+        filtered = products_df[
+            (products_df['type'] == prod_type) &
+            (products_df['price'] >= min_p) &
+            (products_df['price'] <= max_p)
+        ].copy()
 
-                    if len(filtered) > 0:
-                        st.markdown(f"#### {prod_type}")
+        if len(filtered) > 0:
+            st.markdown(f"#### {prod_type}")
 
-                        # Score products
-                        filtered['score'] = 0
-                        for idx, row in filtered.iterrows():
-                            score = 0
-                            if skin_type in str(row['suitable_for']) or 'All' in str(row['suitable_for']):
-                                score += 40
-                            concern_matches = sum(1 for c in top_concerns if c in str(row['concerns']))
-                            score += concern_matches * 10
-                            score += row['rating'] * 2
-                            filtered.at[idx, 'score'] = score
+            # FIX: Create score list instead of modifying DataFrame directly
+            scores = []
+            for idx, row in filtered.iterrows():
+                score = 0.0  # Use float from start
+                if skin_type in str(row['suitable_for']) or 'All' in str(row['suitable_for']):
+                    score += 40.0
+                concern_matches = sum(1 for c in top_concerns if c in str(row['concerns']))
+                score += concern_matches * 10.0
+                score += float(row['rating']) * 2.0
+                scores.append(score)
+            
+            # Assign all scores at once with proper dtype
+            filtered = filtered.copy()
+            filtered['score'] = scores
 
-                        top_prod = filtered.nlargest(3, 'score')
+            top_prod = filtered.nlargest(3, 'score')
 
-                        for _, prod in top_prod.iterrows():
-                            st.markdown(f"""
-                            <div class="product-card">
-                                <h4>{prod['name']}</h4>
-                                <p><strong>Brand:</strong> {prod['brand']} | <strong>Price:</strong> ₹{prod['price']} | <strong>Rating:</strong> {'⭐' * int(prod['rating'])}</p>
-                                <p><strong>Key Actives:</strong> {prod['key_actives']}</p>
-                            </div>
-                            """, unsafe_allow_html=True)
-
+            for _, prod in top_prod.iterrows():
+                st.markdown(f"""
+                <div class="product-card">
+                    <h4>{prod['name']}</h4>
+                    <p><strong>Brand:</strong> {prod['brand']} | <strong>Price:</strong> ₹{prod['price']} | <strong>Rating:</strong> {'⭐' * int(prod['rating'])}</p>
+                    <p><strong>Key Actives:</strong> {prod['key_actives']}</p>
+                </div>
+                """, unsafe_allow_html=True)
                 # Routine
                 st.markdown("---")
                 st.markdown("## 📅 Your Daily Routine")
