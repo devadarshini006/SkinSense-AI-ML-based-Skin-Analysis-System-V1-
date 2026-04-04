@@ -34,15 +34,23 @@ st.markdown("""
         color: white;
         margin: 1rem 0;
     }
-    .product-card {
-        padding: 1rem;
-        border-left: 4px solid #FF6B9D;
-        background: #f8f9fa;
-        margin: 0.5rem 0;
-        border-radius: 5px;
-    }
-</style>
-""", unsafe_allow_html=True)
+   .product-card {
+    padding: 1rem;
+    border-left: 4px solid #FF6B9D;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.product-card h4 {
+    color: #FF6B9D;
+    margin: 0 0 0.5rem 0;
+}
+.product-card p {
+    color: #333333;
+    margin: 0.25rem 0;
+}
 
 # Load models ( need to upload these files when deploying)
 @st.cache_resource
