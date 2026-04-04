@@ -51,6 +51,8 @@ st.markdown("""
     color: #333333;
     margin: 0.25rem 0;
 }
+</style>
+""", unsafe_allow_html=True)
 
 # Load models ( need to upload these files when deploying)
 @st.cache_resource
