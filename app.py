@@ -234,13 +234,12 @@ with tab1:
                 filtered = filtered.copy()
                 filtered['score'] = scores
                 top_prod = filtered.nlargest(3, 'score')
-
-                        for _, prod in top_prod.iterrows():
-                            st.markdown(f"""
-                            <div class="product-card">
-                                <h4>{prod['name']}</h4>
-                                <p><strong>Brand:</strong> {prod['brand']} | <strong>Price:</strong> ₹{prod['price']} | <strong>Rating:</strong> {'⭐' * int(prod['rating'])}</p>
-                                <p><strong>Key Actives:</strong> {prod['key_actives']}</p>
+                for _, prod in top_prod.iterrows():
+                    st.markdown(f"""
+                    <div class="product-card">
+                        <h4>{prod['name']}</h4>
+                         <p><strong>Brand:</strong> {prod['brand']} | <strong>Price:</strong> ₹{prod['price']} | <strong>Rating:</strong> {'⭐' * int(prod['rating'])}</p>
+                         <p><strong>Key Actives:</strong> {prod['key_actives']}</p>
                             </div>
                             """, unsafe_allow_html=True)
 
