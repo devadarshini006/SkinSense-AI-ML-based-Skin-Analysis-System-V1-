@@ -220,17 +220,20 @@ with tab1:
                         st.markdown(f"#### {prod_type}")
 
                         # Score products
-                        filtered['score'] = 0
-                        for idx, row in filtered.iterrows():
-                            score = 0
-                            if skin_type in str(row['suitable_for']) or 'All' in str(row['suitable_for']):
-                                score += 40
-                            concern_matches = sum(1 for c in top_concerns if c in str(row['concerns']))
-                            score += concern_matches * 10
-                            score += row['rating'] * 2
-                            filtered.at[idx, 'score'] = score
-
-                        top_prod = filtered.nlargest(3, 'score')
+                       # Score products - FIXED
+                scores = []
+                for idx, row in filtered.iterrows():
+                    score = 0.0
+                    if skin_type in str(row['suitable_for']) or 'All' in str(row['suitable_for']):
+                        score += 40.0
+                    concern_matches = sum(1 for c in top_concerns if c in str(row['concerns']))
+                    score += concern_matches * 10.0
+                    score += float(row['rating']) * 2.0
+                    scores.append(score)
+                
+                filtered = filtered.copy()
+                filtered['score'] = scores
+                top_prod = filtered.nlargest(3, 'score')
 
                         for _, prod in top_prod.iterrows():
                             st.markdown(f"""
